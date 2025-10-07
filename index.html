@@ -1,205 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TopFollow - Free Instagram Followers and Likes</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #8e44ad, #9b59b6);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.2);
-        }
-        .header .close {
-            color: white;
-            font-size: 20px;
-        }
-        .header .title {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .main-content {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-        }
-        .app-icon {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-        .promo-text {
-            font-size: 24px;
-            margin: 10px 0;
-        }
-        .user-count {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 10px;
-            border-radius: 10px;
-            margin: 10px 0;
-            display: inline-block;
-        }
-        .download-section {
-            margin: 20px 0;
-        }
-        .download-btn {
-            display: inline-block;
-            background: white;
-            color: #8e44ad;
-            padding: 10px 20px;
-            margin: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .contact-info, .version-info {
-            font-size: 14px;
-            margin: 10px 0;
-        }
-        .version-info {
-            color: #ddd;
-        }
-        .section {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-        }
-        .section h2 {
-            color: #fff;
-        }
-        .benefits, .faq {
-            text-align: left;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .benefits ul, .faq ul {
-            list-style: none;
-            padding: 0;
-        }
-        .benefits li, .faq li {
-            margin-bottom: 10px;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.3);
-        }
-        .footer-section {
-            margin: 10px 0;
-        }
-        @media (max-width: 600px) {
-            .download-btn {
-                display: block;
-                margin: 10px auto;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IWACU VPN - Fast & Secure Free VPN</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      background: linear-gradient(to bottom, #8e44ad, #9b59b6);
+      color: white;
+      text-align: center;
+      line-height: 1.6;
+    }
+    header {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      font-weight: bold;
+      font-size: 28px;
+      margin: 0;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Download Card */
+    .download-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .download-card h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .download-card p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 35px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+      margin: 10px;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    .download-btn {
+      background-color: #25D366;
+    }
+    .download-btn:hover {
+      background-color: #1ebc57;
+    }
+    .telegram-btn {
+      background-color: #0088cc;
+    }
+    .telegram-btn:hover {
+      background-color: #0077b6;
+    }
+    .whatsapp-btn {
+      background-color: #128C7E;
+    }
+    .whatsapp-btn:hover {
+      background-color: #0d6f64;
+    }
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 30px 15px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-left: 0;
+      list-style: none;
+    }
+    li::before {
+      content: "⭐ ";
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      font-size: 13px;
+      color: #ddd;
+    }
+
+    @media (max-width: 600px) {
+      .social-buttons {
+        flex-direction: column;
+      }
+      .btn {
+        width: 80%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <span class="close">×</span>
-        <span class="title">Download Official TopFollow</span>
-        <span>⋮</span>
-    </header>
 
-    <main class="main-content">
-        <div class="app-icon">💜 TopFollow</div>
-        <div class="promo-text">Get free Instagram followers and likes with TopFollow app</div>
-        <div class="user-count">Users Joined to Topfollow</div>
-        <p>Topfollow - The best application to gain instagram followers and likes for free</p>
-        <div class="download-section">
-            <p>Download Official Topfollow app for android APK:</p>
-            <a href="#" class="download-btn">GET IT ON Google Play</a>
-            <a href="#" class="download-btn">DIRECT DOWNLOAD .APK FILE</a>
-        </div>
-        <div class="contact-info">Contact: support@topfollow.app</div>
-        <div class="version-info">Version: 5.5.4<br>Last update: 23.04.2025</div>
+  <header>
+    <img src="icon.png" alt="IWACU VPN Logo" class="logo">
+    <h1>IWACU VPN</h1>
+    <p>Fast • Secure • Unlimited VPN Access</p>
+  </header>
 
-        <div class="section">
-            <h2>Promo Banner TopFollow APK</h2>
-            <p>How to use</p>
-            <p><strong>TopFollow app for get free instagram followers</strong></p>
-            <p><strong>How it works?</strong></p>
-            <p>Download Official TopFollow APK click Direct download .APK FILE or Get it on PlayMarket.</p>
-            <p>Top Follow is an app where you can get free Instagram followers and likes by completing tasks, inviting new users with your referral code, and mining coins and crystals. After you earn coins, go to the order page in the app and choose the service you need. You can order unlimited Instagram followers or Instagram likes for your profile or your friends' profiles.</p>
-            <p>TopFollow is application for increase your social media followers and likes for free. We have user friendly interface, fast working app, many settings to earn coins and order instagram followers and likes for free to your profile or for your friends and clients.</p>
-            <p><strong>Downloads:</strong> 14102182+<br><strong>Reviews:</strong> 60148+<br><strong>Followers Delivered:</strong> 2201230102+<br><strong>Likes Delivered:</strong> 7281584219+</p>
-            <p>We working many years and have developed stable app. Many users join TopFollow every day to grow their Instagram followers and likes. TopFollow trusted app with over 5 million downloads from the official store and more than 10 million downloads from our website.</p>
-            <p><strong>rating topfollow app</strong><br><strong>Screen record of how app working:</strong></p>
-            <p><strong>Secret section</strong></p>
-            <p><strong>TopFollow secret codes</strong><br><strong>topfollow promo code</strong><br><strong>TopFollow Promo Code</strong><br>+200 Coins</p>
-            <p>This code can be used only once by all users. Code lifetime is limited. If you don't see the code here, please wait for updates.</p>
-        </div>
+  <div class="download-card">
+    <h2>Download IWACU VPN</h2>
+    <p>Get the latest version of IWACU VPN for Android and enjoy secure, fast, and unlimited browsing.</p>
+    <a href="https://www.mediafire.com/file/kcdmloja3sctde8/app-release.apk/file" class="btn download-btn" target="_blank">⬇️ Download Now</a>
+  </div>
 
-        <div class="section benefits">
-            <h2>Why Can the TopFollow App Do More Than Others?</h2>
-            <ul>
-                <li><strong>Benefits of the TopFollow App</strong></li>
-                <li>We have added many flexible settings to avoid restrictions on profiles that mine coins. The app provides comfortable and fast operation and delivery.</li>
-                <li><strong>Fast Followers and Likes Delivery</strong></li>
-                <li>When you order Instagram followers and likes, your order will start immediately.</li>
-                <li><strong>Free Coins on TopFollow</strong></li>
-                <li>We add new promo codes for TopFollow every week. Join our Telegram channel. Don't miss new TopFollow promo codes.</li>
-                <li><strong>Download the Official TopFollow APK</strong></li>
-                <li>Only the official TopFollow Android app runs great on your device, with fast operation and no bugs. Be careful, fake applications can damage your device.</li>
-                <li><strong>TopFollow Events</strong></li>
-                <li>We create interesting events for our app promotion with big rewards like 1,000,000 TopFollow Coins or 3,000,000 Crystals for winners, and free coins for all participants.</li>
-                <li><strong>Stable Work and Fast Support</strong></li>
-                <li>The latest TopFollow APK update ensures fast and stable app working. If you have any problems with the app, our support team is ready to help you and find a solution.</li>
-                <li><strong>Real Top Followers</strong></li>
-                <li>TopFollow app offers you unlimited Instagram followers for the organic growth of your account. The more followers and likes you have on your Instagram profile, the higher you rank in search results, and more people notice and follow you.</li>
-                <li><strong>Multiple Accounts</strong></li>
-                <li>You can use multiple accounts for mining coins. The best way is to create 10-100 profiles per day for coin mining and promote your referral code. Each day, you can order 10000 Instagram followers using 20 accounts for mining coins.</li>
-                <li><strong>User-friendly App</strong></li>
-                <li>The interface of the official TopFollow APK is user-friendly. At the first start of the app, you will see hints and help on how to use the app. You can skip it or follow the steps to learn how to get free likes or followers using the original TopFollow.</li>
-            </ul>
-        </div>
+  <section>
+    <h2>Why Choose IWACU VPN?</h2>
+    <ul>
+      <li>100% Free VPN — No hidden costs.</li>
+      <li>Unlimited data and bandwidth.</li>
+      <li>Military-grade AES-256 encryption.</li>
+      <li>No logs policy for maximum privacy.</li>
+      <li>Works on all Android versions.</li>
+    </ul>
+  </section>
 
-        <div class="section faq">
-            <h2>Frequently Asked Questions</h2>
-            <ul>
-                <li><strong>Is TopFollow APK safe? Is TopFollow APK safe?</strong></li>
-                <li><strong>How to avoid Instagram restrictions with TopFollow in 2025?</strong></li>
-                <li><strong>No active accounts on TopFollow, how to solve?</strong></li>
-                <li><strong>Check Internet Connection Problem error</strong></li>
-                <li><strong>How to update the TopFollow app?</strong></li>
-                <li><strong>TopFollow App Fix No Active Account Problem</strong></li>
-                <li><strong>TopFollow App Not Working Login</strong></li>
-            </ul>
-        </div>
+  <section>
+    <h2>Advanced Features</h2>
+    <ul>
+      <li>Fast and reliable global servers.</li>
+      <li>Auto-connect and Kill Switch.</li>
+      <li>DNS leak protection.</li>
+      <li>Unblock websites, apps, and streaming platforms.</li>
+      <li>Secure Wi-Fi connection in public places.</li>
+    </ul>
+  </section>
 
-        <div class="download-section">
-            <p>Download Official Topfollow app for android APK:</p>
-            <a href="#" class="download-btn">GET IT ON Google Play</a>
-            <a href="#" class="download-btn">DIRECT DOWNLOAD .APK FILE</a>
-        </div>
-    </main>
+  <section>
+    <h2>Join Our Community</h2>
+    <p>Stay updated with the latest VPN updates, free server lists, and support channels.</p>
+    <div class="social-buttons">
+      <a href="https://t.me/DemonTennel" target="_blank" class="btn telegram-btn">💬 Join Telegram</a>
+      <a href="https://chat.whatsapp.com/Baab2ylb8i5JT7xdjSsuaq?mode=ems_share_t" target="_blank" class="btn whatsapp-btn">💚 Join WhatsApp</a>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <div class="footer-section">
-            <p><strong>TopFollow app</strong><br>Official TopFollow.app APK 2025. Latest version. Free instagram followers app</p>
-        </div>
-        <div class="footer-section">
-            <p><strong>Quick Links</strong><br>Download<br>How to use<br>About<br>Blog<br>FAQ<br>Contact us</p>
-        </div>
-        <div class="footer-section">
-            <p><strong>Terms and Conditions</strong><br>Terms and Conditions<br>Privacy Policy<br>Disclaimer</p>
-        </div>
-        <div class="footer-section">
-            <p><strong>Join Us</strong><br>Join to our telegram channel for more info about TopFollow promo code, free coins or events</p>
-        </div>
-        <div class="footer-section">
+  <footer>
+    <p>© 2025 IWACU VPN. All rights reserved.</p>
+    <p>Best Free VPN App for Android — Powered by Legacy Network</p>
+  </footer>
+
+</body>
+</html>lass="footer-section">
             <p><strong>Contact Us</strong><br>support@topfollow.app</p>
         </div>
         <p>TopFollow © 2025. All rights reserved.</p>
